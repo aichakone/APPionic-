@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar color="orange">
+        <ion-title>Login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding='true'>
+    <div class="center">
+        <img src="" class="small" />
+        <h1>Se connecter</h1>
+    </div>
+    <form>
+        <ion-list>
+            <ion-item>
+                <ion-label position="stacked">Login</ion-label>
+                <ion-input autocomplete="off" type="text" name="username" [(ngModel)]="postData.username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="stacked">Mot de passe</ion-label>
+                <ion-input autocomplete="off" type="password" name="password" [(ngModel)]="postData.password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button expand="block" share="round" color="success" (click)="loginAction()">Connexion</ion-button>
+    </form>
+</ion-content>
